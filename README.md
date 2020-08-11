@@ -4,6 +4,12 @@
 
 See [DEMO](https://tategakibunko.github.io/combo-player/).
 
+## Install
+
+```bash
+npm i combo-player
+```
+
 ## Usage
 
 ```typescript
