@@ -110,7 +110,7 @@ info("this is info"), warn("this is warning"), error("this is error")
 
 ## Supported functions
 
-About these functions, see [combo-script](https:github.com/tategakibunko/combo-script).
+About these functions, see [combo-script](https://github.com/tategakibunko/combo-script).
 
 - `rotate`, `rotateL`, `rotateR`
 - `set`, `setL`, `setR`
