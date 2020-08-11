@@ -1,0 +1,55 @@
+{
+  "title": "ウイイレ2020",
+  "commands": [
+    {
+      "name": "高いフライパス",
+      "category": "パス",
+      "combo": "R2 { circle }"
+    },
+    {
+      "name": "フライスルーパス",
+      "category": "パス",
+      "combo": "L1 { triangle }"
+    },
+    {
+      "name": "高いクロス",
+      "category": "クロス",
+      "combo": "R2 { circle }"
+    },
+    {
+      "name": "アーリークロス",
+      "category": "クロス",
+      "combo": "L1 { circle }"
+    },
+    {
+      "name": "ループシュート",
+      "category": "シュート",
+      "combo": "L1 { square }"
+    },
+    {
+      "name": "コントロールシュート",
+      "category": "シュート",
+      "combo": "R2{ square }"
+    },
+    {
+      "name": "シュートフェイント",
+      "category": "キックテクニック",
+      "combo": "square { (touchL(), cross) }"
+    },
+    {
+      "name": "ボディフェイク",
+      "category": "テクニックコントロール",
+      "combo": "R2 { touchR() }, touchL()"
+    },
+    {
+      "name": "クイックボディフェイク",
+      "category": "テクニックコントロール",
+      "combo": "touchL(), (touchL(), 'でターン')"
+    },
+    {
+      "name": "シザーズ",
+      "category": "テクニックコントロール",
+      "combo": "R2{ ('進行方向直角に', touchR()) }, touchL()"
+    }
+  ]
+}

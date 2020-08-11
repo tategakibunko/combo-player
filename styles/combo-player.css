@@ -1,0 +1,255 @@
+#pad-container {
+  margin-left: 1em;
+  display: grid;
+  grid-gap: 14px;
+  grid-template-columns: [left-pad] 100px [right-pad] 100px [pad-end];
+  grid-template-rows: [opt2-start] 30px [opt1-start] 30px [main-start] 100px [stick-start] 64px [row-end];
+}
+
+#left-opt1-container {
+  grid-column-start: left-pad;
+  grid-column-end: right-pad;
+  grid-row-start: opt1-start;
+  grid-row-end: main-start;
+}
+
+#left-opt2-container {
+  grid-column-start: left-pad;
+  grid-column-end: right-pad;
+  grid-row-start: opt2-start;
+  grid-row-end: opt1-start;
+}
+
+#right-opt1-container {
+  grid-column-start: right-pad;
+  grid-column-end: pad-end;
+  grid-row-start: opt1-start;
+  grid-row-end: main-start;
+}
+
+#right-opt2-container {
+  grid-column-start: right-pad;
+  grid-column-end: pad-end;
+  grid-row-start: opt2-start;
+  grid-row-end: opt1-start;
+}
+
+#cross-key-container {
+  grid-column-start: left-pad;
+  grid-column-end: right-pad;
+  grid-row-start: main-start;
+  grid-row-end: stick-start;
+  display: grid;
+}
+
+#cross-keys {
+  display: grid;
+  grid-template: 32px 32px 32px / 32px 32px 32px;
+}
+
+#cross-keys i.arrow {
+  padding: 6px;
+}
+
+#cross-keys .bg {
+  background-color: transparent;
+}
+
+#cross-keys .pad {
+  background-color: #e0e1e2;
+}
+
+#cross-keys .pad.emboss {
+  box-shadow: 0 3px 0px rgba(0, 0, 0, .4) !important;
+}
+
+#cross-keys .pad.emboss:hover {
+  box-shadow: none;
+}
+
+#main-buttons-container {
+  grid-column-start: right-pad;
+  grid-column-end: pad-end;
+  grid-row-start: main-start;
+  grid-row-end: stick-start;
+  position: relative;
+}
+
+#main-buttons-container .button {
+  position: absolute;
+}
+
+#action-up-button {
+  top: 0px;
+  left: 32px;
+}
+
+#action-right-button {
+  top: 32px;
+  left: 62px;
+}
+
+#action-left-button {
+  top: 32px;
+  left: 0px;
+}
+
+#action-down-button {
+  top: 62px;
+  left: 32px;
+}
+
+#cross-keys i.arrow.icon.active {
+  color:#db2828;
+}
+
+#left-stick-container {
+  position: relative;
+  grid-column-start: left-pad;
+  grid-column-end: center-pad;
+  grid-row-start: stick-start;
+  grid-row-end: row-end;
+}
+
+#right-stick-container {
+  position: relative;
+  grid-column-start: right-pad;
+  grid-column-end: pad-end;
+  grid-row-start: stick-start;
+  grid-row-end: row-end;
+}
+
+#left-stick-container svg,
+#right-stick-container svg {
+  position: absolute;
+  left: 18px;
+}
+
+#log-container {
+  min-height: 120px;
+}
+
+#log-container .log-stick-label {
+  position: absolute;
+  left: 45px;
+  top: 52px;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+
+/* use inline-grid and place-items to center inner label */
+#log-container .stick {
+  display: inline-grid;
+  place-items: center;
+  vertical-align: middle;
+  margin: 0 1.5em;
+  position: relative;
+  border-radius:50%;
+  width: 28px;
+  height: 28px;
+  background-color: black;
+}
+
+#action-up-button.active {
+  background-color:#00b5ad;
+  color:#fff;
+}
+
+#action-right-button.active {
+  background-color:#db2828;
+  color:#fff;
+}
+
+#action-left-button.active {
+  background-color: #e03997;
+  color:#fff;
+}
+
+#action-down-button.active {
+  background-color: #2185d0;
+  color:#fff;
+}
+
+#l1.active {
+  /* background-color:#b5cc18; */
+  background-color: black;
+  color:#fff;
+}
+
+#l2.active {
+  /* background-color:#b5cc18; */
+  background-color: black;
+  color:#fff;
+}
+
+#r1.active {
+  /* background-color:#6435c9; */
+  background-color: black;
+  color:#fff;
+}
+
+#r2.active {
+  /* background-color:#6435c9; */
+  background-color: black;
+  color:#fff;
+}
+
+.button.emboss {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .4) !important;
+}
+
+.action-buttons {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 84px;
+  height: 84px;
+  margin: 0 1em;
+}
+
+.action-buttons .button {
+  position: absolute;
+}
+
+.action-buttons .action-up {
+  left: 28px;
+  top: 0px;
+}
+
+.action-buttons .action-right {
+  left: 56px;
+  top: 28px;
+}
+
+.action-buttons .action-down {
+  left: 28px;
+  top: 56px;
+}
+
+.action-buttons .action-left {
+  left: 0px;
+  top: 28px;
+}
+
+.action-buttons .button.active {
+  /* background-color:#db2828; */
+  background-color: black;
+  color: white;
+}
+
+textarea#code {
+  width: 80%;
+  height: 3em;
+}
+
+.speed-rate label {
+  padding-right: 1em;
+}
+.speed-rate label:hover{
+  cursor: pointer;
+}
+.speed-rate label input {
+  margin-right: 0.3em;
+}
+

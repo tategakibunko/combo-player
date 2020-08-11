@@ -1,0 +1,28 @@
+{
+  "name": "combo-player",
+  "version": "0.0.1",
+  "description": "combo script player",
+  "main": "index.js",
+  "scripts": {
+    "build": "make",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tategakibunko/combo-player.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@svgdotjs/svg.js": "^3.0.16",
+    "animejs": "^3.2.0",
+    "ts-combo-script": "0.0.1"
+  },
+  "devDependencies": {
+    "@types/animejs": "^3.1.1",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

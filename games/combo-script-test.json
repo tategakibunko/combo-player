@@ -1,0 +1,51 @@
+{
+  "title": "test",
+  "commands": [
+    {
+      "name": "PlayStation button test(プレステ用ボタン押下テスト)",
+      "combo": "triangle, circle, cross, square, (triangle, circle), (circle, cross), (cross, square), (L1, L2, L3), (R1, R2, R3)"
+    },
+    {
+      "name": "Xbox button test(XBox用ボタン押下テスト)",
+      "combo": "y, b, a, x, (y, b), (b, a), (a, x), (L1, L2, L3), (R1, R2, R3)"
+    },
+    {
+      "name": "Cross key test(十字キーテスト)",
+      "combo": "up, (up, right), right, (down, right), down, (left, down), left, (left, up), up"
+    },
+    {
+      "name": "Set command",
+      "combo": "setL(45), setR(90), setL(135), setR(180)"
+    },
+    {
+      "name": "Rotate command",
+      "combo": "rotateL(0, 90), rotateR(90, 180), rotateL(180, 0), rotateR(-90, 45)"
+    },
+    {
+      "name": "SetRotate command",
+      "combo": "setRotateL(0, 90), setRotateR(90, 180), setRotateL(90, 360), setRotateR(0, 270)"
+    },
+    {
+      "name": "Touch command",
+      "combo": "touchL(), touchR()"
+    },
+    {
+      "name": "Or command",
+      "combo": "or(L1, L2){ circle }, or(R1, R2)"
+    },
+    {
+      "name": "Mixed or1",
+      "category": "test",
+      "combo": "(a, or(x, y)){ L1 }"
+    },
+    {
+      "name": "Mixed or2",
+      "category": "test",
+      "combo": "(or(a, b), or(x, y))"
+    },
+    {
+      "name": "Hold command",
+      "combo": "(L1, L2){ triangle, circle }, R1"
+    }
+  ]
+}

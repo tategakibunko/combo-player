@@ -1,0 +1,40 @@
+{
+  "title": "鉄拳7",
+  "commands": [
+    {
+      "name": "左一本背負い投げ",
+      "category": "ポール（投げ技）",
+      "combo": "'相手に接近して', (square, cross)"
+    },
+    {
+      "name": "腕取り逆十字",
+      "category": "ポール（投げ技）",
+      "combo": "'相手に接近して', (triangle, circle)"
+    },
+    {
+      "name": "腕返し",
+      "category": "ポール（投げ技）",
+      "combo": "'相手の左側から接近して', (square, cross), 'もしくは', (triangle, circle)"
+    },
+    {
+      "name": "崩拳",
+      "category": "ポール（固有技）",
+      "combo": "rotate(90, 0), triangle"
+    },
+    {
+      "name": "瓢瓦",
+      "category": "ポール（固有技）",
+      "combo": "rotate(90, 180), '方向キー離して', square"
+    },
+    {
+      "name": "鉞打ち",
+      "category": "ポール（固有技）",
+      "combo": "right, (square, triangle)"
+    },
+    {
+      "name": "富嶽",
+      "category": "ポール（固有技）",
+      "combo": "right, (square, circle)"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "title": "ストリートファイター5",
+  "commands": [
+    {
+      "name": "（必殺技）昇龍拳",
+      "category": "リュウ（右向き）",
+      "combo": "'Zを描くように!', setL(0), moveL(0,  90), rotateL(90, 45), triangle"
+    },
+    {
+      "name": "（必殺技）波動拳",
+      "category": "リュウ（右向き）",
+      "combo": "rotate(90, 0), circle"
+    },
+    {
+      "name": "（必殺技）竜巻旋風脚",
+      "category": "リュウ（右向き）",
+      "combo": "setRotateL(90, 180), cross"
+    },
+    {
+      "name": "（必殺技）上段足刀蹴り",
+      "category": "リュウ（右向き）",
+      "combo": "rotateL(180, 0), cross"
+    },
+    {
+      "name": "（必殺技）一心",
+      "category": "リュウ（右向き）",
+      "combo": "info('Ｖトリガー２発動中'), (R1, R2)"
+    },
+    {
+      "name": "（特殊技）鎖骨割り",
+      "category": "リュウ（右向き）",
+      "combo": "setL(0), triangle"
+    },
+    {
+      "name": "（特殊技）鳩尾（みぞおち）砕き",
+      "category": "リュウ（右向き）",
+      "combo": "setL(0), R1"
+    },
+    {
+      "name": "（特殊技）かかと落とし",
+      "category": "リュウ（右向き）",
+      "combo": "setL(180), R2"
+    },
+    {
+      "name": "（特殊技）上段二連撃",
+      "category": "リュウ（右向き）",
+      "combo": "R1, R2"
+    },
+    {
+      "name": "（特殊技）上段三連撃",
+      "category": "リュウ（右向き）",
+      "combo": "triangle, R1, R2"
+    },
+    {
+      "name": "（クリティカルアーツ）真空波動拳",
+      "category": "リュウ（右向き）",
+      "combo": "rotate(90, 0), rotate(90, 0), circle"
+    },
+    {
+      "name": "（クリティカルアーツ）電刃波動拳",
+      "category": "リュウ（右向き）",
+      "combo": "info('Ｖトリガー発動中に'), rotate(90, 0), rotate(90, 0), circle"
+    },
+    {
+      "name": "（通常投げ）背負投げ",
+      "category": "リュウ（右向き）",
+      "combo": "setL(0), unsetL(0), (square, cross)"
+    },
+    {
+      "name": "（投げ技）巴投げ",
+      "category": "リュウ（右向き）",
+      "combo": "setL(180), (square, cross)"
+    }
+  ]
+}

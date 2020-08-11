@@ -1,0 +1,136 @@
+<html>
+
+<head>
+  <title>Combo Player</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/semantic-ui/semantic.min.css">
+  <link rel="stylesheet" href="styles/combo-player.css">
+  <link rel="stylesheet" href="styles/menu.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="menu">
+      <li class="logo">
+        <h1>Combo Player</h1>
+      </li>
+      <li class="item has-submenu">
+        <a>Games</a>
+        <ul class="submenu">
+          <li class="subitem"><a class="game-item" data-game-id="street-fighter5-jp">ストリートファイター5</a></li>
+          <li class="subitem"><a class="game-item" data-game-id="tekken7-jp">鉄拳7</a></li>
+          <li class="subitem"><a class="game-item" data-game-id="pes2020-jp">ウイイレ2020</a></li>
+          <li class="subitem"><a class="game-item" data-game-id="combo-script-test">コマンドサンプル</a></li>
+        </ul>
+      </li>
+      <li class="item"><a href="https://tategakibunko.hatenablog.com">Blog</a></li>
+      <li class="item"><a href="https://twitter.com/tategakibunko"><i class="large blue twitter icon"></i></a></li>
+      <li class="item">
+        <a href="https://github.com/tategakibunko/combo-player"><i class="large github icon"></i></a>
+      </li>
+      <!-- toggle menu bars -->
+      <li class="toggle">
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="ui basic segment">
+    <div class="ui form">
+      <div class="field">
+        <label>Speed</label>
+        <div class="speed-rate">
+          <label><input type="radio" name="speed-rate" value="0.5">Slow</label>
+          <label><input type="radio" name="speed-rate" value="1" checked>Normal</label>
+          <label><input type="radio" name="speed-rate" value="1.5">Fast</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Command</label>
+        <select id="combo-script">
+          <option value="(left, up, right, down)">Error arrow</option>
+          <option value="(L1, L2, (x,y))">Resursive Set</option>
+          <option value="foo('this', 'is', 'it!'), a">Undefined plugin error</option>
+          <option value="R2 { square }">Control Shoot(コントロール・シュート)</option>
+          <option value="square { info('ボール蹴る前に'), (touchL(), cross) }">Shoot feint(シュートフェイント)</option>
+          <option value="warn('Vトリガー発動中に'), setrotate(90, 0), setrotate(90, 0), square">Den-jin-hado-ken(電刃波動拳)
+          </option>
+          <option value="rotate(90, 0), rotate(90, 0), R1">Shin-ku-hado-ken(真空波動拳)</option>
+          <option value="rotate(90, 0), triangle">Hado-ken(波動拳)</option>
+          <option value="'draw the Z!', set(0), move(0, 90), rotate(90, 45), triangle">Sho-ryu-ken(昇龍拳)</option>
+          <option value="info('foo'), warn('bar'), error('baz')">helper message</option>
+          <option value="up, (up, right), right, (down, right), down, (left, down), left, (left, up), up">arrows(矢印色々)
+          </option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Script(Editable)</label>
+        <!-- <pre class="ui mini info message" id="script-code"></pre> -->
+        <textarea rows=1 id="script-code"></textarea>
+      </div>
+      <div class="field">
+        <button class="ui blue labeled icon button" id="play-combo"><i class="play icon"></i>Play combo</button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="ui basic segment">
+    <div id="pad-container">
+      <div id="left-opt2-container">
+        <button class="ui fluid emboss mini button" id="l2">L2</button>
+      </div>
+
+      <div id="left-opt1-container">
+        <button class="ui fluid emboss mini button" id="l1">L1</button>
+      </div>
+
+      <div id="cross-key-container">
+        <div id="cross-keys">
+          <div class="r11 bg"></div>
+          <div class="r12 pad" id="cross-key-up"><i class="arrow up large icon"></i></div>
+          <div class="r13 bg"></div>
+          <div class="r21 pad emboss" id="cross-key-left"><i class="arrow left large icon"></i></div>
+          <div class="r22 pad"></div>
+          <div class="r23 pad emboss" id="cross-key-right"><i class="arrow right large icon"></i></div>
+          <div class="r31 bg"></div>
+          <div class="r32 pad emboss" id="cross-key-down"><i class="arrow down large icon"></i></div>
+          <div class="r33 bg"></div>
+        </div>
+      </div>
+
+      <div id="left-stick-container" class="stick"></div>
+
+      <div id="right-opt2-container">
+        <button class="ui fluid emboss mini button" id="r2">R2</button>
+      </div>
+
+      <div id="right-opt1-container">
+        <button class="ui fluid emboss mini button" id="r1">R1</button>
+      </div>
+
+      <div id="main-buttons-container">
+        <div id="action-up-button" class="ui circular icon emboss button">△</div>
+        <div id="action-right-button" class="ui circular icon emboss button"><i class="circle outline icon"></i></div>
+        <div id="action-down-button" class="ui circular icon emboss button">Ｘ</div>
+        <div id="action-left-button" class="ui circular icon emboss button"><i class="square outline icon"></i></div>
+      </div>
+
+      <div id="right-stick-container" class="stick"></div>
+
+    </div>
+
+    <!-- <div class="ui header">command log</div> -->
+    <div class="ui mini steps" id="log-container"></div>
+  </div>
+
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
