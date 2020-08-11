@@ -2,6 +2,8 @@
 
 **compo player** is visualizer app of [combo script](https://github.com/tategakibunko/combo-script), supports standard button names and stick operation(Playstaion, Xbox), and plugin feature is also supported.
 
+See [DEMO](https://tategakibunko.github.io/combo-player/).
+
 ## Usage
 
 ```typescript
