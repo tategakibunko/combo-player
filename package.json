@@ -2,7 +2,8 @@
   "name": "combo-player",
   "version": "0.0.1",
   "description": "combo script player",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "make",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +12,15 @@
     "type": "git",
     "url": "git+https://github.com/tategakibunko/combo-player.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "game",
+    "command-input",
+    "combo",
+    "combo-script",
+    "visualizer",
+  ],
+  "author": "Watanabe Masaki",
+  "license": "MIT",
   "dependencies": {
     "@svgdotjs/svg.js": "^3.0.16",
     "animejs": "^3.2.0",
