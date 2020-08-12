@@ -238,6 +238,7 @@ export class MoveStickSVG implements ActionEffect {
       arrow.remove();
       line.remove();
     }
+    return Promise.resolve();
   }
 
   dispose() { }
