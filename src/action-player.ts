@@ -66,7 +66,7 @@ export class CsActionPlayer implements ActionPlayer {
       this.log.playUnset(target, fromAngle, context),
     ]);
   }
-  async visitTouch(target: StickName, context: ActionContext): Promise<any> {
+  visitTouch(target: StickName, context: ActionContext): Promise<any> {
     return Promise.all([
       this.pad.playTouch(target, context),
       this.log.playTouch(target, context),
