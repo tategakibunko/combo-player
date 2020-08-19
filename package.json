@@ -24,7 +24,7 @@
   "dependencies": {
     "@svgdotjs/svg.js": "^3.0.16",
     "animejs": "^3.2.0",
-    "ts-combo-script": "0.0.2"
+    "ts-combo-script": "^0.1.0"
   },
   "devDependencies": {
     "@types/animejs": "^3.1.2",
