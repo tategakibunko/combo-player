@@ -1,5 +1,5 @@
-// import { Action, ActionTextGroup, ActionContext, ButtonName, StickName, ActionPlayer, TextAction } from '../../combo-script';
-import { Action, ActionTextGroup, ActionContext, ButtonName, StickName, ActionPlayer, TextAction } from 'ts-combo-script';
+// import { Action, ActionTextGroup, ActionContext, ButtonName, StickName, ActionPlayer } from '../../combo-script';
+import { Action, ActionTextGroup, ActionContext, ButtonName, StickName, ActionPlayer } from 'ts-combo-script';
 import { EffectEnv, PadElements, LogElements, ActionController, PluginStore } from './types';
 import { CsPadController } from './pad-controller';
 import { CsLogController } from './log-controller';

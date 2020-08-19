@@ -34,14 +34,14 @@ export class ArrowKeysComposer implements ActionMapper<Action[]> {
       const buttonName = groupedAction.crossPushActions.map(action => action.target).join("-");
       const push = groupedAction.crossPushActions[0];
       composedActions = composedActions.concat(
-        new PushAction(buttonName, push.ownerActionSet, push.children, push.holdedBy)
+        new PushAction(buttonName, push.ownerActionSet, push.children, push.holder)
       );
     }
     if (groupedAction.crossPushDownActions.length > 0) {
       const buttonName = groupedAction.crossPushDownActions.map(action => action.target).join("-");
       const pushDown = groupedAction.crossPushDownActions[0];
       composedActions = composedActions.concat(
-        new PushDownAction(buttonName, pushDown.ownerActionSet, pushDown.children, pushDown.holdedBy)
+        new PushDownAction(buttonName, pushDown.ownerActionSet, pushDown.children, pushDown.holder)
       );
     }
     if (groupedAction.crossPushUpActions.length > 0) {
