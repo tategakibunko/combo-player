@@ -1,6 +1,6 @@
 {
   "name": "combo-player",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "combo script player",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
