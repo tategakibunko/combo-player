@@ -23,7 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "@svgdotjs/svg.js": "^3.0.16",
-    "animejs": "^3.2.0",
+    "animejs": "^3.2.1",
     "ts-combo-script": "^0.1.0"
   },
   "devDependencies": {
